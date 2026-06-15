@@ -349,6 +349,44 @@
     font-weight: 600;
   }
 
+  /* CERTIFICATIONS */
+  .skills-certifications {
+    margin-top: 2.5rem;
+  }
+  .skills-certifications h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--slate-500);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .cert-list { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .cert-card {
+    display: flex; align-items: center; gap: 0.9rem;
+    padding: 0.75rem 1.25rem 0.75rem 0.75rem;
+    background: var(--slate-50);
+    border: 1px solid var(--slate-200);
+    border-radius: 10px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .cert-card:hover { border-color: var(--blue-300); background: var(--blue-50); }
+  .cert-badge {
+    width: 48px; height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  .cert-info { display: flex; flex-direction: column; }
+  .cert-name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--slate-700);
+  }
+  .cert-issuer {
+    font-size: 0.75rem;
+    color: var(--slate-400);
+  }
+
   /* CONTACT */
   #contact {
     background: var(--blue-900);
@@ -609,6 +647,19 @@
         <div class="lang-pill">🇬🇧 English <span class="lang-level">C1 · Business Fluent</span></div>
         <div class="lang-pill">🇩🇪 German <span class="lang-level">B1 · Intermediate</span></div>
         <div class="lang-pill">🇮🇳 Marathi &amp; Hindi <span class="lang-level">Native</span></div>
+      </div>
+    </div>
+
+    <div class="skills-certifications">
+      <h3>Certifications</h3>
+      <div class="cert-list">
+        <div class="cert-card">
+          <img src="White%20Belt%20Badge.png" alt="Six Sigma White Belt badge" class="cert-badge"/>
+          <div class="cert-info">
+            <span class="cert-name">Six Sigma White Belt</span>
+            <span class="cert-issuer">Certified</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

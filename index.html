@@ -9,15 +9,16 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --blue-50: #EFF6FF;
-    --blue-100: #DBEAFE;
-    --blue-200: #BFDBFE;
-    --blue-400: #60A5FA;
-    --blue-500: #3B82F6;
-    --blue-600: #2563EB;
-    --blue-700: #1D4ED8;
-    --blue-800: #1E40AF;
-    --blue-900: #1E3A8A;
+    --blue-50: #EAF2F8;
+    --blue-100: #CADFF4;
+    --blue-200: #A8C8E3;
+    --blue-300: #7AACD4;
+    --blue-400: #5390C2;
+    --blue-500: #3878AE;
+    --blue-600: #215E99;
+    --blue-700: #1A4C7D;
+    --blue-800: #143A61;
+    --blue-900: #0F2C49;
     --slate-50: #F8FAFC;
     --slate-100: #F1F5F9;
     --slate-200: #E2E8F0;
@@ -361,10 +362,16 @@
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
-  .cert-list { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .cert-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+  }
   .cert-card {
-    display: flex; align-items: center; gap: 0.9rem;
-    padding: 0.75rem 1.25rem 0.75rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem 1.5rem;
     background: var(--slate-50);
     border: 1px solid var(--slate-200);
     border-radius: 10px;
@@ -374,17 +381,19 @@
   .cert-badge {
     width: 48px; height: 48px;
     object-fit: contain;
-    flex-shrink: 0;
+    margin-bottom: 0.5rem;
   }
   .cert-info { display: flex; flex-direction: column; }
   .cert-name {
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     color: var(--slate-700);
+    margin-bottom: 0.25rem;
   }
   .cert-issuer {
-    font-size: 0.75rem;
+    font-size: 0.775rem;
     color: var(--slate-400);
+    line-height: 1.5;
   }
 
   /* CONTACT */
@@ -641,25 +650,25 @@
       </div>
     </div>
 
+    <div class="skills-certifications">
+      <h3>Certifications</h3>
+      <div class="cert-list">
+        <div class="cert-card">
+          <img src="white-belt-badge.png" alt="Six Sigma White Belt badge" class="cert-badge"/>
+          <div class="cert-info">
+            <span class="cert-name">Six Sigma White Belt</span>
+            <span class="cert-issuer">Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="skills-languages">
       <h3>Languages</h3>
       <div class="lang-list">
         <div class="lang-pill">🇬🇧 English <span class="lang-level">C1 · Business Fluent</span></div>
         <div class="lang-pill">🇩🇪 German <span class="lang-level">B1 · Intermediate</span></div>
         <div class="lang-pill">🇮🇳 Marathi &amp; Hindi <span class="lang-level">Native</span></div>
-      </div>
-    </div>
-
-    <div class="skills-certifications">
-      <h3>Certifications</h3>
-      <div class="cert-list">
-        <div class="cert-card">
-          <img src="White%20Belt%20Badge.png" alt="Six-Sigma-White-Belt-badge" class="cert-badge"/>
-          <div class="cert-info">
-            <span class="cert-name">Six Sigma White Belt</span>
-            <span class="cert-issuer">Certified</span>
-          </div>
-        </div>
       </div>
     </div>
   </div>

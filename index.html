@@ -170,9 +170,7 @@
     letter-spacing: 0.02em;
   }
   .btn-secondary:hover { border-color: var(--blue-500); background: var(--blue-50); transform: translateY(-1px); }
-  .hero-photo-wrap {
-    display: flex; justify-content: center;
-  }
+  .hero-photo-wrap { display: flex; justify-content: center; }
   .hero-photo {
     width: 220px; height: 220px;
     border-radius: 50%;
@@ -180,20 +178,6 @@
     border: 4px solid var(--white);
     box-shadow: 0 0 0 3px var(--blue-200), 0 16px 48px rgba(37,99,235,0.12);
   }
-  .hero-photo-placeholder {
-    width: 220px; height: 220px;
-    border-radius: 50%;
-    background: var(--blue-100);
-    border: 4px solid var(--white);
-    box-shadow: 0 0 0 3px var(--blue-200), 0 16px 48px rgba(37,99,235,0.12);
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    color: var(--blue-400);
-    font-size: 0.75rem;
-    font-weight: 500;
-    text-align: center;
-    gap: 0.5rem;
-  }
-  .hero-photo-placeholder svg { width: 48px; height: 48px; opacity: 0.5; }
 
   /* ABOUT */
   #about { background: var(--white); }
@@ -205,9 +189,7 @@
     text-align: justify;
   }
   .about-text p + p { margin-top: 1.2rem; }
-  .about-tags {
-    display: flex; flex-wrap: wrap; gap: 0.5rem;
-  }
+  .about-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
   .skills-tags { margin-top: 2.5rem; }
   .skills-tags h3 {
     font-size: 0.875rem;
@@ -273,21 +255,14 @@
     color: var(--slate-400);
     margin-bottom: 1rem;
   }
-  .star-block { margin-bottom: 0.7rem; }
-  .star-label {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--blue-600);
-    margin-bottom: 0.15rem;
-  }
-  .star-text {
+  .project-body {
     font-size: 0.875rem;
     color: var(--slate-600);
-    line-height: 1.6;
+    line-height: 1.7;
     text-align: justify;
+    margin-bottom: 0.75rem;
   }
+  .project-body + .project-body { margin-top: 0.5rem; }
   .project-result {
     margin-top: 1rem;
     padding: 0.6rem 0.9rem;
@@ -315,25 +290,11 @@
     transition: border-color 0.2s, background 0.2s;
   }
   .skill-card:hover { border-color: var(--blue-300); background: var(--blue-50); }
-  .skill-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
-  .skill-name {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: var(--slate-700);
-    margin-bottom: 0.25rem;
-  }
-  .skill-desc {
-    font-size: 0.775rem;
-    color: var(--slate-400);
-    line-height: 1.5;
-  }
-  .skills-languages {
-    margin-top: 2.5rem;
-  }
+  .skill-icon { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+  .skill-name { font-weight: 600; font-size: 0.9rem; color: var(--slate-700); margin-bottom: 0.25rem; }
+  .skill-desc { font-size: 0.775rem; color: var(--slate-400); line-height: 1.5; }
+
+  .skills-languages { margin-top: 2.5rem; }
   .skills-languages h3 {
     font-size: 0.875rem;
     font-weight: 600;
@@ -362,9 +323,7 @@
   }
 
   /* CERTIFICATIONS */
-  .skills-certifications {
-    margin-top: 2.5rem;
-  }
+  .skills-certifications { margin-top: 2.5rem; }
   .skills-certifications h3 {
     font-size: 0.875rem;
     font-weight: 600;
@@ -373,15 +332,11 @@
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
-  .cert-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-  }
+  .cert-list { display: flex; flex-wrap: wrap; gap: 1.25rem; }
   .cert-card {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
     flex: 1 1 460px;
     max-width: 560px;
@@ -404,20 +359,11 @@
     height: 56px;
     width: 56px;
     flex-shrink: 0;
+    margin-top: 0.2rem;
   }
   .cert-info { display: flex; flex-direction: column; }
-  .cert-name {
-    font-weight: 600;
-    font-size: 1.05rem;
-    color: var(--slate-700);
-    margin-bottom: 0.3rem;
-  }
-  .cert-issuer {
-    font-size: 0.85rem;
-    color: var(--slate-400);
-    line-height: 1.5;
-    text-align: justify;
-  }
+  .cert-name { font-weight: 600; font-size: 1.05rem; color: var(--slate-700); margin-bottom: 0.3rem; }
+  .cert-issuer { font-size: 0.85rem; color: var(--slate-400); line-height: 1.5; text-align: justify; }
   @media (max-width: 480px) {
     .cert-card { flex: 1 1 100%; max-width: 100%; padding: 1.25rem 1.5rem; }
     img.cert-badge { height: 110px; max-width: 96px; }
@@ -425,10 +371,7 @@
   }
 
   /* CONTACT */
-  #contact {
-    background: var(--blue-900);
-    color: var(--white);
-  }
+  #contact { background: var(--blue-900); color: var(--white); }
   #contact .section-label { color: var(--blue-300); }
   #contact .section-title { color: var(--white); }
   #contact .divider { background: var(--blue-400); }
@@ -440,9 +383,7 @@
     margin-bottom: 2.5rem;
     text-align: justify;
   }
-  .contact-links {
-    display: flex; flex-wrap: wrap; gap: 1rem;
-  }
+  .contact-links { display: flex; flex-wrap: wrap; gap: 1rem; }
   .contact-link {
     display: flex; align-items: center; gap: 0.6rem;
     padding: 0.75rem 1.25rem;
@@ -459,22 +400,11 @@
   .contact-link-icon { font-size: 1rem; }
 
   /* FOOTER */
-  footer {
-    background: var(--slate-900);
-    padding: 2.5rem 2rem;
-    text-align: center;
-  }
+  footer { background: var(--slate-900); padding: 2.5rem 2rem; text-align: center; }
   .footer-inner { max-width: 860px; margin: 0 auto; }
-  .footer-tagline {
-    font-size: 0.875rem;
-    color: var(--slate-400);
-    margin-bottom: 1.5rem;
-  }
+  .footer-tagline { font-size: 0.875rem; color: var(--slate-400); margin-bottom: 1.5rem; }
   .footer-tagline strong { color: var(--blue-400); font-weight: 500; }
-  .footer-links {
-    display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
+  .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
   .footer-link {
     display: inline-flex; align-items: center; gap: 0.4rem;
     color: var(--slate-400);
@@ -486,10 +416,7 @@
     border-radius: 6px;
   }
   .footer-link:hover { color: var(--blue-400); border-color: var(--blue-800); }
-  .footer-copy {
-    font-size: 0.75rem;
-    color: var(--slate-600);
-  }
+  .footer-copy { font-size: 0.75rem; color: var(--slate-600); }
 
   /* RESPONSIVE */
   @media (max-width: 680px) {
@@ -501,10 +428,7 @@
     .nav-links { gap: 1rem; }
     section { padding: 3.5rem 1.25rem; }
   }
-
-  @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; }
-  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
 <body>
@@ -551,7 +475,7 @@
       <p>I am an engineer who thrives at the intersection of <strong>Mechanical Design, Industrial Engineering, and Operations Excellence</strong>. My work is driven by a simple philosophy: eliminate waste, standardize what works, and build something better in its place.</p>
       <p>My journey began in mechanical product design, where I learned how technical decisions impact manufacturing costs. Over time, my focus expanded beyond the product itself to the broader systems that create and move value. This evolution led me deep into Lean Manufacturing, fast-paced warehouse logistics, and supply chain optimization.</p>
       <p><strong>What makes my approach unique is this cross-disciplinary bridge.</strong> I combine the technical rigor of a mechanical engineer with the big-picture, systems-thinking mindset of an industrial engineer. Whether optimizing warehouse operations, mapping value streams, or implementing digital workflows, I look at the entire value stream rather than isolated tasks.</p>
-      <p>I approach every challenge with an owner’s mindset, focusing on how minor process tweaks drive broader strategic business goals. To me, the best solutions emerge when structured data analysis meets hands-on collaboration—whether on the shop floor, in the warehouse, or with stakeholders.</p>
+      <p>I approach every challenge with an owner's mindset, focusing on how minor process tweaks drive broader strategic business goals. To me, the best solutions emerge when structured data analysis meets hands-on collaboration—whether on the shop floor, in the warehouse, or with stakeholders.</p>
       <p>Today, my work centers on sustainable operations, process standardization, and supply chain optimization. Whether it's streamlining inventory accuracy or designing smoother operational workflows, I thrive where complexity meets execution.</p>
     </div>
   </div>
@@ -565,84 +489,74 @@
     <div class="divider"></div>
     <div class="projects-grid">
 
-      <!-- Project 1 -->
+      <!-- Project 1: POCO -->
       <div class="project-card">
         <p class="project-company">POCO Einrichtungsmärkte GmbH · Munich, Germany</p>
         <h3 class="project-title">Warehouse Operations Transformation</h3>
         <p class="project-period">Sep 2025 – Present · Working Student</p>
-        <div class="star-block">
-          <p class="star-label">Situation</p>
-          <p class="star-text">Warehouse operations had high customer return rates, long order cycle times, and inefficient inventory placement causing excessive search and pick times.</p>
-        </div>
-        <div class="star-block">
-          <p class="star-label">Task</p>
-          <p class="star-text">Improve warehouse efficiency through systematic inventory management and lean principles.</p>
-        </div>
-        <div class="star-block">
-          <p class="star-label">Action</p>
-          <p class="star-text">Proactively identified operational bottlenecks and reorganized inventory locations strategically. Standardized processes to maximize space utilization and improve picking efficiency.</p>
-        </div>
+        <p class="project-body">Warehouse operations suffered from high customer return rates, long order cycle times, and inefficient inventory placement causing excessive search and pick times — all pointing to systemic gaps in layout and process standardization.</p>
+        <p class="project-body">Proactively identified operational bottlenecks and strategically reorganized inventory locations. Standardized processes to maximize space utilization and improve picking efficiency across the warehouse floor.</p>
         <div class="project-result">✦ Result — Noticeable reduction in customer returns. Lower order cycle times, higher customer satisfaction, and sustained high-volume operations with optimized labour requirements.</div>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Project 2: Siemens -->
       <div class="project-card">
         <p class="project-company">Siemens Mobility · Forage Job Simulation</p>
         <h3 class="project-title">Operations Industrial Engineer — Layout Optimization</h3>
         <p class="project-period">2026 · Virtual Job Simulation, Certified</p>
-        <div class="star-block">
-          <p class="star-label">Situation</p>
-          <p class="star-text">Siemens Mobility's high-speed rail production line had a critical bottleneck in the wheel assembly section, limiting overall manufacturing throughput.</p>
-        </div>
-        <div class="star-block">
-          <p class="star-label">Task</p>
-          <p class="star-text">Identify the root cause of the inefficiency and propose a layout redesign to optimize operations and reduce waste.</p>
-        </div>
-        <div class="star-block">
-          <p class="star-label">Action</p>
-          <p class="star-text">Applied manufacturing and engineering principles alongside data-driven process analysis to pinpoint the bottleneck. Developed a comprehensive layout optimization proposal and presented it in PowerPoint, using technical communication and strategic planning to justify the recommended changes.</p>
-        </div>
+        <p class="project-body">Siemens Mobility's high-speed rail production line had a critical bottleneck in the wheel assembly section, limiting overall manufacturing throughput and calling for a data-driven redesign of the operational layout.</p>
+        <p class="project-body">Applied manufacturing and engineering principles alongside data-driven process analysis to pinpoint the bottleneck. Developed a comprehensive layout optimization proposal and presented it in PowerPoint, using technical communication and strategic planning to justify the recommended changes.</p>
         <div class="project-result">✦ Result — Proposed a layout change for the wheel assembly section that improved operational efficiency and enhanced overall production workflow.</div>
       </div>
 
-      <!-- Project 3 -->
+      <!-- Project 3: Crompton -->
       <div class="project-card">
         <p class="project-company">Crompton Greaves · Nashik, India</p>
         <h3 class="project-title">Switchgear Redesign & Parts Standardization</h3>
         <p class="project-period">Aug 2022 – Jan 2023 · Trainee Engineer, R&D</p>
-        <div class="star-block">
-          <p class="star-label">Situation</p>
-          <p class="star-text">Switchgear assemblies used a high number of fasteners and hardware, with no shared parts library across assemblies — leading to redundant design hours and high material costs.</p>
-        </div>
-        <div class="star-block">
-          <p class="star-label">Task</p>
-          <p class="star-text">Redesign assemblies for cost reduction and create a reusable standard parts library for the R&D team.</p>
-        </div>
-        <div class="star-block">
-          <p class="star-label">Action</p>
-          <p class="star-text">Used Autodesk Inventor and AutoCAD to redesign Switchgear assemblies, minimizing fastener count. Built a standard parts library usable across multiple assemblies. Managed material procurement via SAP.</p>
-        </div>
+        <p class="project-body">Switchgear assemblies relied on a high number of fasteners and hardware, with no shared parts library across assemblies — creating redundant design hours and driving up material costs across the R&D team.</p>
+        <p class="project-body">Used Autodesk Inventor and AutoCAD to redesign Switchgear assemblies, minimizing fastener count. Built a standard parts library reusable across multiple assemblies and managed material procurement via SAP to ensure on-time delivery.</p>
         <div class="project-result">✦ Result — Lowered material costs through part count reduction. Eliminated redundant design work and accelerated the manufacturing process.</div>
       </div>
 
-      <!-- Project 4 -->
+      <!-- Project 4: Bosch -->
       <div class="project-card">
         <p class="project-company">Bosch · Nashik, India</p>
         <h3 class="project-title">Lean Organization in the Value Stream</h3>
         <p class="project-period">Nov 2021 – May 2022 · Bachelor Thesis</p>
-        <div class="star-block">
-          <p class="star-label">Situation</p>
-          <p class="star-text">The production area had excess inventory, unclear FIFO standards, and significant non-value-added search time at storage locations.</p>
-        </div>
-        <div class="star-block">
-          <p class="star-label">Task</p>
-          <p class="star-text">Implement Lean Organization principles across the value stream to reduce waste and standardize inventory flow.</p>
-        </div>
-        <div class="star-block">
-          <p class="star-label">Action</p>
-          <p class="star-text">Created a Value Stream Map to identify bottlenecks. Applied 5S and GEMBA at storage locations. Used Kaizen visualization for consumption control. Tracked inventory with SAP ERP (PP).</p>
-        </div>
+        <p class="project-body">The production area carried excess inventory, operated with unclear FIFO standards, and suffered significant non-value-added search time at storage locations — all symptoms of an unstructured value stream.</p>
+        <p class="project-body">Created a Value Stream Map to identify bottlenecks, applied 5S and GEMBA at storage locations, and used Kaizen visualization for consumption control. Inventory levels were tracked and maintained using SAP ERP (PP).</p>
         <div class="project-result">✦ Result — Reduced search time, enforced FIFO, cut excess inventory, and delivered measurable cost reductions through standardized processes.</div>
+      </div>
+
+      <!-- Project 5: Suyash -->
+      <div class="project-card">
+        <p class="project-company">Suyash Enterprises · Nashik, India</p>
+        <h3 class="project-title">Design & Development of a Progressive Press Tool</h3>
+        <p class="project-period">Dec 2018 – Apr 2019 · Diploma Thesis</p>
+        <p class="project-body">The production process required three separate press tools — for blanking, piercing, and forming — each operated on its own machine, resulting in high cycle times, elevated manufacturing costs, and unnecessary electricity consumption across the line.</p>
+        <p class="project-body">Engineered a single progressive press tool to consolidate all three operations — blanking, piercing, and forming — into one continuous workflow, eliminating the need for three separate machines and the material handling between them.</p>
+        <div class="project-result">✦ Result — Reduced cycle times, lowered manufacturing costs, and cut electricity consumption by consolidating three machines into one.</div>
+      </div>
+
+      <!-- Project 5: Suyash Enterprises -->
+      <div class="project-card">
+        <p class="project-company">Suyash Enterprises · Nashik, India</p>
+        <h3 class="project-title">Design & Development of a Progressive Press Tool</h3>
+        <p class="project-period">Dec 2018 – Apr 2019 · Diploma Thesis</p>
+        <p class="project-body">The manufacturing process relied on three separate press tools — blanking, piercing, and forming — each requiring its own machine, operator cycle, and energy consumption, resulting in inefficient use of floor space, time, and resources.</p>
+        <p class="project-body">Engineered a single progressive press tool to consolidate all three operations into one continuous process, eliminating the need for multiple setups and machine changeovers. The design was developed from concept through production-ready drawings.</p>
+        <div class="project-result">✦ Result — Reduced cycle times, lowered manufacturing costs, and cut electricity consumption by consolidating three machines into one.</div>
+      </div>
+
+      <!-- Project 5: Suyash Enterprises -->
+      <div class="project-card">
+        <p class="project-company">Suyash Enterprises · Nashik, India</p>
+        <h3 class="project-title">Design and Development of a Progressive Press Tool</h3>
+        <p class="project-period">Dec 2018 – Apr 2019 · Diploma Thesis</p>
+        <p class="project-body">The production process required three separate machines — for blanking, piercing, and forming — each running independently, resulting in high cycle times, elevated manufacturing costs, and unnecessary electricity consumption across the line.</p>
+        <p class="project-body">Engineered a single progressive press tool capable of performing all three operations — blanking, piercing, and forming — in one continuous cycle, replacing the need for three separate machines entirely.</p>
+        <div class="project-result">✦ Result — Reduced cycle times, lowered manufacturing costs, and cut electricity consumption by consolidating three machines into one tool.</div>
       </div>
 
     </div>
@@ -705,7 +619,7 @@
     </div>
 
     <div class="skills-certifications">
-      <h3>Certifications</h3>
+      <h3>Certifications &amp; Training</h3>
       <div class="cert-list">
         <div class="cert-card">
           <img src="white-belt-badge.png" alt="Six Sigma White Belt badge" class="cert-badge"/>
